@@ -13,7 +13,7 @@ android {
     compileSdk 34
 
     composeOptions {
-        kotlinCompilerExtensionVersion '1.4.3' // Make sure this matches your Kotlin version
+        kotlinCompilerExtensionVersion '1.5.1' // Make sure this matches your Kotlin version
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -85,12 +85,6 @@ android {
             applicationIdSuffix ".antarctica"
             versionNameSuffix "-antarctica"
             buildConfigField "String", "FLAVOR", "\"ANTARCTICA\""
-        }
-        AFRICA {
-            dimension "region"
-            applicationIdSuffix ".africa"
-            versionNameSuffix "-africa"
-            buildConfigField "String", "FLAVOR", "\"AFRICA\""
         }
     }
 
